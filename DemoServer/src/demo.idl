@@ -1,0 +1,14 @@
+// By Andrew Parkinson
+// c3128094
+// Assignment 3
+// SENG3400 S2
+// October 2016
+
+module ass03
+{
+	interface randCharServer
+	{
+		char get();
+		void shutdown();
+	};
+};
