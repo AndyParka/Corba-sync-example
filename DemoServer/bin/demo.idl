@@ -7,8 +7,8 @@
 module ass03
 {
 	interface randCharServer
-	{
-		char get();
-		void shutdown();
+	{		
+		char getChar();
+		oneway void shutdown();
 	};
 };
