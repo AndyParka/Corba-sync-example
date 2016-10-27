@@ -5,7 +5,7 @@
 // SENG3400 S2
 // October 2016
 
-package demoSrv;
+//package demoSrv;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -37,6 +37,14 @@ class randCharOBJ extends randCharServerPOA {
 		// based on a randomly generated index int
 		char randChar = range.charAt(ThreadLocalRandom.current().nextInt(0, range.length()));
 
+		System.out.println("...Fake Lag...");
+		try {
+			Thread.sleep(ThreadLocalRandom.current().nextInt(10000, 15000));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Returning Char...");
 		return randChar;
 	}
 

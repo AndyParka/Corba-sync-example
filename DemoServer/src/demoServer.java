@@ -5,7 +5,7 @@
 // SENG3400 S2
 // October 2016
 
-package demoSrv;
+//package demoSrv;
 
 import org.omg.CORBA.ORB;
 import org.omg.CosNaming.NameComponent;
