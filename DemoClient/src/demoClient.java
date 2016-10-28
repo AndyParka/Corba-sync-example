@@ -8,9 +8,9 @@ import ass03.randCharServerHelper;
 
 public class demoClient {
 
-	static boolean gshutdown = false;
 	static String s = "Client has started successfully";
 
+	// Possible args are:
 	// sync
 	// async
 	// def
@@ -52,16 +52,11 @@ public class demoClient {
 
 			}
 
-			gshutdown = true;
-			randobj.shutdown();
-
 		} catch (Exception e) {
-			// dodgy hack to stop the orb.shutdown() function appearing as a
-			// crash
-			if (!gshutdown) {
-				System.out.println("Client exception: " + e);
-				e.printStackTrace();
-			}
+
+			System.out.println("Client exception: " + e);
+			e.printStackTrace();
+
 		}
 
 	}

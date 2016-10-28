@@ -59,6 +59,7 @@ public class def {
 						randReturn = getChar.return_value().extract_char();
 						break;
 					}
+
 				}
 			}
 		}

@@ -57,7 +57,7 @@ public class sync {
 				}
 
 			} else {
-				System.out.println("\n\nResults complete");
+
 				break;
 			}
 
