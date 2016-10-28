@@ -48,10 +48,11 @@ public class def {
 				// else if it hasn't by 10 counts
 			} else if (!getChar.poll_response() && count == 10) {
 
-				// wait for server's response in a deferred manor
+				// wait for server's response by continuous polling
 				while (!getChar.poll_response()) {
 
 					// Try to get response
+					// If response has polled
 					if (getChar.poll_response()) {
 						getChar.get_response();
 						// Set private var to the server's random char
@@ -59,9 +60,7 @@ public class def {
 						break;
 					}
 				}
-
 			}
-
 		}
 	}
 }

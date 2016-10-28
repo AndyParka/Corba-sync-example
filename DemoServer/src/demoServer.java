@@ -55,7 +55,7 @@ public class demoServer {
 		catch (Exception e) {
 
 			System.err.println("Client exception: : " + e);
-			e.printStackTrace(System.out);
+			e.printStackTrace();
 
 		}
 
